@@ -3,6 +3,7 @@ go 1.20
 use (
 	./samples/01-simple-go-plugin
 	./samples/02-ready-to-use-host-functions
+	./samples/03-files
 	./
 )
 

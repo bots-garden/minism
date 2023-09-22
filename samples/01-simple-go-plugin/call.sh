@@ -7,5 +7,3 @@ say_hello \
 --allow-hosts '["*","*.google.com","yo.com"]' \
 --config '{"firstName":"Philippe","lastName":"Charrière"}' \
 --allow-paths '{"testdata":"./"}'
-
-echo ""

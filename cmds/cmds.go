@@ -34,7 +34,7 @@ func Parse(command string, args []string) error {
 
 		input := flagSet.String("input", "", "input")
 		logLevel := flagSet.String("log-level", "", "Log level")
-		allowHosts := flagSet.String("allow-hosts", `"[*]"`, "use a json array")
+		allowHosts := flagSet.String("allow-hosts", `["*"]`, "use a json array")
 		allowPaths := flagSet.String("allow-paths", "{}", "use a json string to define the allowed paths")
 		config := flagSet.String("config", "{}", "use a json string to define the config data")
 		wasi := flagSet.Bool("wasi", true, "")
