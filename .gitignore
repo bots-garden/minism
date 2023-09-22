@@ -2,3 +2,4 @@ go-sdk
 release
 *.wasm
 linux
+.DS_Store
