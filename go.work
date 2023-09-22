@@ -1,0 +1,9 @@
+go 1.20
+
+use (
+	./samples/01-simple-go-plugin
+	./samples/02-ready-to-use-host-functions
+	./
+)
+
+// go work sync

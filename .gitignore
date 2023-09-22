@@ -1,0 +1,4 @@
+go-sdk
+release
+*.wasm
+linux
