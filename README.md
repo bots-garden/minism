@@ -1,6 +1,8 @@
 # Minism
 
-A minimal(*) CLI for the Extism plugins.
+![Minism Gopher](minism.gopher.png "Minism Gopher")
+
+A minimal(*) CLI to run the Extism plugins.
 
 > (*): with zero dependency
 
@@ -12,3 +14,4 @@ A minimal(*) CLI for the Extism plugins.
 ## Docker image (arm64 + amd64)
 
 https://hub.docker.com/repository/docker/botsgarden/minism/general
+
