@@ -6,6 +6,8 @@ A minimal(*) **CLI** to run the **[Extism](https://extism.org/)** plugins.
 
 > (*): with zero dependency
 
+Find the **official Extism CLI** here: https://github.com/extism/cli
+
 ## Dependencies
 
 `git clone https://github.com/extism/go-sdk.git` 
