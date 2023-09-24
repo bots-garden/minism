@@ -42,6 +42,7 @@ Available Commands:
 Flags:
   --input             string   Argument of the function
   --log-level         string   Log level to print message
+                               Possible values: error, warn, info, debug, trace
   --allow-hosts       string   Hosts for HTTP request (json array) 
                                Default: ["*"]
   --allow-paths       string   Allowed paths to write and read files (json string) 
@@ -58,11 +59,11 @@ Flags:
 > **Example**:
 ```bash
 minism call simple.wasm say_hello \
---input "Bob Morane" \
---log-level info \
---allow-hosts '["*","*.google.com"]' \
---config '{"firstName":"John","lastName":"Doe"}' \
---allow-paths '{"data":"/mnt"}'
+  --input "Bob Morane" \
+  --log-level info \
+  --allow-hosts '["*","*.google.com"]' \
+  --config '{"firstName":"John","lastName":"Doe"}' \
+  --allow-paths '{"data":"/mnt"}'
 ```
 
 ## Docker image (arm64 + amd64)
