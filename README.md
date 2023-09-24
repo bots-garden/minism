@@ -8,7 +8,8 @@ A minimal(*) **CLI** to run the **[Extism](https://extism.org/)** plugins.
 
 ## Dependencies
 
-- `git clone https://github.com/extism/go-sdk.git` (because no releases published)
+`git clone https://github.com/extism/go-sdk.git` 
+>(Right now, there is no published release of the Extism Go SDK)
 
 
 ## Docker image (arm64 + amd64)
