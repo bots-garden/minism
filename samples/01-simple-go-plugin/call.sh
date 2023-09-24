@@ -5,5 +5,4 @@ say_hello \
 --input "Bob Morane" \
 --log-level info \
 --allow-hosts '["*","*.google.com","yo.com"]' \
---config '{"firstName":"Philippe","lastName":"Charrière"}' \
---allow-paths '{"testdata":"./"}'
+--config '{"firstName":"Philippe","lastName":"Charrière"}'

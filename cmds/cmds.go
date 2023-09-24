@@ -32,16 +32,16 @@ func Parse(command string, args []string) error {
 
 		flagSet := flag.NewFlagSet("call", flag.ExitOnError)
 
-		input := flagSet.String("input", "", "input")
-		logLevel := flagSet.String("log-level", "", "Log level")
-		allowHosts := flagSet.String("allow-hosts", `["*"]`, "use a json array")
-		allowPaths := flagSet.String("allow-paths", "{}", "use a json string to define the allowed paths")
-		config := flagSet.String("config", "{}", "use a json string to define the config data")
+		input := flagSet.String("input", "", "Argument of the function")
+		logLevel := flagSet.String("log-level", "", "Log level to print message")
+		allowHosts := flagSet.String("allow-hosts", `["*"]`, "Hosts for HTTP request (json array)")
+		allowPaths := flagSet.String("allow-paths", "{}", "Allowed paths to write and read files (json string)")
+		config := flagSet.String("config", "{}", "Configuration data (json string)")
 		wasi := flagSet.Bool("wasi", true, "")
 
-		wasmUrl := flagSet.String("wasm-url", "", "url to download the wasm file")
-		authHeaderName := flagSet.String("auth-header-name", "", "ex: PRIVATE-TOKEN")
-		authHeaderValue := flagSet.String("auth-header-value", "", "ex: IlovePandas")
+		wasmUrl := flagSet.String("wasm-url", "", "Url to download the wasm file")
+		authHeaderName := flagSet.String("auth-header-name", "", "Authentication header name, ex: PRIVATE-TOKEN")
+		authHeaderValue := flagSet.String("auth-header-value", "", "Value of the authentication header, ex: IlovePandas")
 
 		flagSet.Parse(args[2:])
 
