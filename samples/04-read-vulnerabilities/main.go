@@ -50,9 +50,11 @@ func report() {
 
 		// Description could be too long
 		description := vulnerabilities[i].GetStringBytes("description")
-		shortDescription := truncate(description, 30)
+		//shortDescription := truncate(description, 30)
 
-		pdk.Log(pdk.LogInfo, "description: "+string(shortDescription))
+		//pdk.Log(pdk.LogInfo, "description: "+string(shortDescription))
+		pdk.Log(pdk.LogInfo, "description: "+string(description))
+
 
 		pdk.Log(pdk.LogInfo, "cve: "+string(vulnerabilities[i].GetStringBytes("cve")))
 		pdk.Log(pdk.LogInfo, "severity: "+string(vulnerabilities[i].GetStringBytes("severity")))
