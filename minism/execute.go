@@ -111,6 +111,7 @@ func Execute(wasmArgs WasmArguments) {
 			extism.WasmFile{
 				Path: wasmArgs.FilePath},
 		},
+		//Memory: { MaxPages: 10 },
 		AllowedHosts: hosts,
 		AllowedPaths: paths,
 		Config:       manifestConfig,
