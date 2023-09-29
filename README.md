@@ -16,7 +16,7 @@ Find the **official Extism CLI** here: https://github.com/extism/cli
 ## Install Minism
 
 ```bash
-MINISM_VERSION="0.0.0"
+MINISM_VERSION="0.0.1"
 MINISM_OS="linux" # or darwin
 MINISM_ARCH="arm64" # or amd64
 wget https://github.com/bots-garden/minism/releases/download/v${MINISM_VERSION}/minism-v${MINISM_VERSION}-${MINISM_OS}-${MINISM_ARCH}
@@ -77,7 +77,7 @@ You can use **Docker** to run **Minism**:
 ```bash
 docker run \
     -v $(pwd)/samples/02-ready-to-use-host-functions:/app \
-    --rm botsgarden/minism:0.0.0  \
+    --rm botsgarden/minism:0.0.1  \
     ./minism call ./app/host-functions.wasm say_hello \
     --input "😀 Hello World 🌍! (from TinyGo)" \
     --log-level info \
