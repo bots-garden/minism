@@ -1,1 +1,1 @@
-minism v0.0.0 🍔 [hamburger]
+minism v0.0.1 🧇 [waffle]
