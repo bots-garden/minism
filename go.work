@@ -5,6 +5,7 @@ use (
 	./samples/02-ready-to-use-host-functions
 	./samples/03-files
 	./samples/04-read-vulnerabilities
+	./samples/05-read-user-input
 	./
 )
 

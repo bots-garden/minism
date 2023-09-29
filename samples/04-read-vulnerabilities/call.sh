@@ -6,4 +6,6 @@ report \
 --log-level debug \
 --allow-paths '{"data":"/mnt"}'
 
+#--allow-paths '{".":"/mnt"}'
+
 echo ""

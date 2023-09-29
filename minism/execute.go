@@ -69,6 +69,7 @@ func downloadWasmFile(wasmArgs WasmArguments) error {
 }
 
 func Execute(wasmArgs WasmArguments) {
+	hostFunctions := InitializeHostFunctions()
 
 	if wasmArgs.Url != "" { // we need to download the wasm file
 		fmt.Println("🌍 downloading...", wasmArgs.Url)
@@ -118,7 +119,7 @@ func Execute(wasmArgs WasmArguments) {
 	}
 
 	// get an instance of the wasm Extism plugin
-	wasmPlugin, err := extism.NewPlugin(ctx, manifest, extismConfig, nil)
+	wasmPlugin, err := extism.NewPlugin(ctx, manifest, extismConfig, hostFunctions)
 
 	if err != nil {
 		panic(err)
