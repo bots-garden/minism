@@ -1,1 +1,1 @@
-minism v0.0.3 🥯 [bagel]
+minism v0.0.2 🥯 [bagel]
