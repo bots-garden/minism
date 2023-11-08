@@ -8,7 +8,7 @@ import (
 	"minism/levels"
 	"os"
 
-	"github.com/extism/extism"
+	extism "github.com/extism/go-sdk"
 	"github.com/tetratelabs/wazero"
 
 	"github.com/go-resty/resty/v2"

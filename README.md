@@ -8,15 +8,10 @@ A minimal(*) **CLI** to run the **[Extism](https://extism.org/)** plugins.
 
 Find the **official Extism CLI** here: https://github.com/extism/cli
 
-## Dependencies
-
-`git clone https://github.com/extism/go-sdk.git` 
->(Right now, there is no published release of the Extism Go SDK)
-
 ## Install Minism
 
 ```bash
-MINISM_VERSION="0.0.1"
+MINISM_VERSION="0.0.3"
 MINISM_OS="linux" # or darwin
 MINISM_ARCH="arm64" # or amd64
 wget https://github.com/bots-garden/minism/releases/download/v${MINISM_VERSION}/minism-v${MINISM_VERSION}-${MINISM_OS}-${MINISM_ARCH}

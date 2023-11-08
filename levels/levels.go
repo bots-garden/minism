@@ -1,6 +1,6 @@
 package levels
 
-import "github.com/extism/extism"
+import extism "github.com/extism/go-sdk"
 
 func GetLevel(logLevel string) extism.LogLevel {
 	level := extism.Off

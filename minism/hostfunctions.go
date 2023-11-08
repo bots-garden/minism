@@ -7,7 +7,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/extism/extism"
+	extism "github.com/extism/go-sdk"
 	"github.com/tetratelabs/wazero/api"
 )
 
@@ -133,7 +133,7 @@ func InitializeHostFunctions() []extism.HostFunction {
 		"env",
 		print,
 		[]api.ValueType{api.ValueTypeI64},
-		api.ValueTypeI64,
+		[]api.ValueType{api.ValueTypeI64},
 	)
 
 	hostPrintln := extism.NewHostFunctionWithStack(
@@ -141,7 +141,7 @@ func InitializeHostFunctions() []extism.HostFunction {
 		"env",
 		println,
 		[]api.ValueType{api.ValueTypeI64},
-		api.ValueTypeI64,
+		[]api.ValueType{api.ValueTypeI64},
 	)
 
 	hostInput := extism.NewHostFunctionWithStack(
@@ -149,7 +149,7 @@ func InitializeHostFunctions() []extism.HostFunction {
 		"env",
 		input,
 		[]api.ValueType{api.ValueTypeI64},
-		api.ValueTypeI64,
+		[]api.ValueType{api.ValueTypeI64},
 	)
 
 	return []extism.HostFunction{
